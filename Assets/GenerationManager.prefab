@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1791479995425426597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2442980823509997202}
+  - component: {fileID: 5245788502487102322}
+  - component: {fileID: 1936551999429357948}
+  m_Layer: 0
+  m_Name: GenerationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2442980823509997202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791479995425426597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5245788502487102322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791479995425426597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e5d8a1acdd845209d641e4d5e5172c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomSeed: 1
+  n: 10
+  activeGenerationBeacon: []
+  activeBuildingGenerationBeacon: []
+--- !u!114 &1936551999429357948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791479995425426597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2399b918033f14962af55b13e1674372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buildingGrounds:
+  - chance: 1
+    buildingGround: {fileID: 1979688621002750625, guid: 3cd7ea67a5973419e83ab2586dc8c0b9, type: 3}
+    possibleBuildings: []
+  - chance: 0.8
+    buildingGround: {fileID: 771454106729529384, guid: c8e0e673807ec45eabc085cf680de4c8, type: 3}
+    possibleBuildings:
+    - {fileID: 7974653740936751111, guid: 2d9ab9f26838d427a8c14a8f8ffa03df, type: 3}
+    - {fileID: 732048147900690826, guid: 425ca4d05c53a4166bc8e8d1c72c9ac8, type: 3}
+  - chance: 0.6
+    buildingGround: {fileID: 6815336984906321494, guid: e4d425f8d107248bc98ee5dbfc6b6375, type: 3}
+    possibleBuildings:
+    - {fileID: 1515260217941017881, guid: 5587d2822b6d943389735adca83eeaaf, type: 3}
+    - {fileID: 5755730481312824712, guid: bb64d8dcba3224a049c2d75f186f054a, type: 3}
+  - chance: 0.4
+    buildingGround: {fileID: 6666935600208755015, guid: 2e5e07590575447a19654f2492173617, type: 3}
+    possibleBuildings:
+    - {fileID: 6067546351742986868, guid: 645de61e5df6942f3b6d718ee6b7c504, type: 3}
